@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, sans-serif;
+    background: repeating-linear-gradient(45deg,
+            #FFEB3B,
+            #FFEB3B 1rem,
+            #000000 1rem,
+            #000000 2rem);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+.container {
+    max-width: 25rem;
+    margin: 50px auto;
+    padding: 30px 20px 20px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #FBC02D;
+
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tabs__item:first-child {
+    margin-right: 7px;
+}
+
+.tabs__item {
+    padding: 20px 35px;
+    text-align: center;
+    background-color: rgba(251, 192, 45, 1);
+    color: rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .3 ease-in;
+}
+
+.tabs__item.active,
+.tabs__item:hover {
+    opacity: 1;
+}
+
+.tabs__content {
+    margin-top: 30px;
+}
+
+.tabs__form {
+    border-radius: 4px;
+    display: none;
+}
+
+.tabs__form.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 6px;
+    border: 1px solid #FBC02D;
+    border-radius: 0.5rem;
+}
+
+button {
+    padding: 10px;
+    background-color: #FBC02D;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    background-color: #F9A825;
+}
+
+.popup-bg{
+    position: fixed;
+    z-index: 3;
+    background: rgb(247, 247, 247);
+
+}
+.popup-bg > div {
+    font-size: 20px;
+    max-width: 200px;
+    margin: 40px auto;
+}

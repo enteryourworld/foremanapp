@@ -1,0 +1,172 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #FCEB42;
+}
+
+.container {
+    max-width: 760px;
+    margin: 70px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFF9C4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    text-align: center;
+    color: #FBC02D;
+}
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+.accordio-item {
+    background-color: transparent;
+    color: #1E1E1E;
+    padding: 20px 15px;
+    border: 1px solid #FBC02D;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    user-select: none;
+    margin: 10px 10;
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.accordio-item, .upper-content{
+    position: relative;
+}
+.accordio-item .upper-content button, #get-monitor{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.accordio-item button{
+    cursor: pointer;
+    background-color: #FBC02D;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 4px;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+.accordio-button:hover {
+    background-color: #F9A825;
+}
+.accordio-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #FFF9C4;
+    border: 1px solid #FBC02D;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.accordio-content p {
+    margin: 0;
+    padding: 15px 0;
+}
+
+
+
+#workers-table{display: none;}
+#addworker-form{display: none;}
+#workers-table.active, #addworker-form.active{display: block;}
+.header{
+    background-color: black;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 0.1rem #1E1E1E solid ;
+    line-height: 50px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.header img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+#logo{
+    display: inline-block;
+    font-family: 'Segoi UI Black', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    color: #FBC02D;
+}
+.header__info{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.header__info p {
+    margin-bottom: 0;
+}
+.form-select{
+    max-width: 200px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+}
+.form-s
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 6px;
+    border: 1px solid #FBC02D;
+    border-radius: 0.5rem;
+}
+
+button {
+    padding: 10px;
+    background-color: #FBC02D;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+ table{
+    display: block;
+    margin-top: 30px;
+ }
+thead tr th { 
+    min-width: calc(520px/4);
+    margin-bottom: 10ex;
+    margin: 3px;
+    word-wrap: break-word;
+  }
+
+  tbody tr td{
+    background-color: #f2ead8;
+    border-radius: 4px;
+    min-width: calc(520px/4);
+    margin-bottom: 10ex;
+    margin: 3px;
+    word-wrap: break-word;
+  }
